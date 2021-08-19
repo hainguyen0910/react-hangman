@@ -36,7 +36,7 @@ function SelectedLetters({
                 fontSize="30px"
                 borderBottom="5px solid white"
               >
-                {item}
+                {item.toUpperCase()}
               </Text>
             ))
           )}

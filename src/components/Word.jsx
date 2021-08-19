@@ -1,11 +1,11 @@
-import { Flex, Text } from '@chakra-ui/react';
+import { Box, Flex, Text } from '@chakra-ui/react';
 import React from 'react';
 
 function Word({ word, correctLetters }) {
   return (
     <Flex mt="10">
       {word?.split('').map((item, index) => (
-        <Text
+        <Box
           color="white"
           key={index}
           w="30px"
@@ -18,11 +18,11 @@ function Word({ word, correctLetters }) {
           borderBottom="5px solid white"
         >
           {correctLetters?.includes(item) ? (
-            <span>{item.toUpperCase()}</span>
+            <Text color="green.500">{item.toUpperCase()}</Text>
           ) : (
             ''
           )}
-        </Text>
+        </Box>
       ))}
     </Flex>
   );
