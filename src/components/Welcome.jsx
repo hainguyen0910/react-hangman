@@ -13,7 +13,7 @@ import {
 import * as React from 'react';
 import { GrGithub } from 'react-icons/gr';
 
-export default function Welcome(props) {
+export default function Welcome() {
   return (
     <Container maxW={'3xl'}>
       <Stack
@@ -48,9 +48,6 @@ export default function Welcome(props) {
             bg={'green.400'}
             rounded={'full'}
             px={6}
-            // onClick={
-            //   (window.location.href = 'https://github.com/hainguyen0910')
-            // }
             onClick={() =>
               window.open('https://github.com/hainguyen0910', '_blank')
             }

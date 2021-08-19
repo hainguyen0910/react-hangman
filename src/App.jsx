@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import {
+  Box,
   Center,
   Divider,
   Flex,
@@ -196,6 +197,7 @@ function App() {
       </Grid>
 
       <Footer />
+
       {/* Modal */}
       <Modal isOpen={isOpen} onClose={onClose} isCentered>
         <ModalOverlay />
@@ -213,29 +215,33 @@ function App() {
                   color="green.500"
                   mt="5"
                 />
-                <Text maxWidth="sm" mt="2" textAlign="center">
-                  Congratulations on winning! The keyword this time is{' '}
+                <Box mt="2" textAlign="center" maxWidth="sm">
+                  <Text display="inline">
+                    Congratulations on winning! The keyword this time is
+                  </Text>
                   <Text
                     color="red"
                     display="inline"
-                  >{`${word.toUpperCase()} `}</Text>{' '}
-                  and you guessed it{' '}
+                  >{` ${word.toUpperCase()} `}</Text>
+                  and you guessed it
                   <Text
                     color="red"
                     display="inline"
-                  >{`${selectedLetters.length} `}</Text>{' '}
+                  >{` ${selectedLetters.length} `}</Text>
                   times
-                </Text>
+                </Box>
               </Center>
             )}
             {result === 'lose' && (
               <Center flexDir="column">
                 <Icon as={RiCloseCircleFill} w="20" h="20" color="red.500" />
                 <Heading>LOSE 😭!!!!</Heading>
-                <Text maxWidth="sm" mt="2" textAlign="center">
-                  Sorry, you have already lost! The keyword this time is{' '}
-                  <Text color="red">{`${word.toUpperCase()} `}</Text>
-                </Text>
+                <Box maxWidth="sm" mt="2" textAlign="center">
+                  <Text>
+                    Sorry, you have already lost! The keyword this time is
+                  </Text>
+                  <Text color="red">{` ${word.toUpperCase()}`}</Text>
+                </Box>
               </Center>
             )}
           </ModalBody>

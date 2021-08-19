@@ -9,7 +9,7 @@ function Word({ word, correctLetters }) {
           color="white"
           key={index}
           w="30px"
-          h="50ox"
+          h="50px"
           mr="3"
           display="inline-flex"
           fontSize="30px"
