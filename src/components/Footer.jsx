@@ -1,4 +1,4 @@
-import { Box, Container, Divider, Stack, Text } from '@chakra-ui/react';
+import { Box, Container, Divider, Link, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 import { FaFacebook, FaGithub, FaLinkedin, FaSkype } from 'react-icons/fa';
 import SocialButton from './SocialButton';
@@ -18,7 +18,10 @@ function Footer(props) {
           justify={{ md: 'space-between' }}
           align={{ md: 'center' }}
         >
-          <Text>© 2021 Design by me!</Text>
+          <Text>
+            © 2021 - Hangman game -{' '}
+            <Link href="https://github.com/hainguyen0910">Whistledev</Link>
+          </Text>
           <Stack direction="row" spacing={6}>
             <SocialButton label="Github" href="/">
               <FaGithub />
