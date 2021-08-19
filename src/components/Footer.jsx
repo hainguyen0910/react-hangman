@@ -23,16 +23,28 @@ function Footer(props) {
             <Link href="https://github.com/hainguyen0910">Whistledev</Link>
           </Text>
           <Stack direction="row" spacing={6}>
-            <SocialButton label="Github" href="/">
+            <SocialButton
+              label="Github"
+              href="https://github.com/hainguyen0910"
+            >
               <FaGithub />
             </SocialButton>
-            <SocialButton label="Facebook" href="/">
+            <SocialButton
+              label="Facebook"
+              href="https://www.facebook.com/hainguyen.091099/"
+            >
               <FaFacebook />
             </SocialButton>
-            <SocialButton label="LinkedIn" href="/">
+            <SocialButton
+              label="LinkedIn"
+              href="https://www.linkedin.com/in/whistledev"
+            >
               <FaLinkedin />
             </SocialButton>
-            <SocialButton label="Twitter" href="/">
+            <SocialButton
+              label="Twitter"
+              href="skype:live:.cid.69ac394d47e8104a?chat"
+            >
               <FaSkype />
             </SocialButton>
           </Stack>
