@@ -74,7 +74,6 @@ function App() {
         if (word.split('').includes(e.target.value.toLowerCase())) {
           setCorrectLetters([...correctLetters, e.target.value.toLowerCase()]);
         } else {
-          console.log('vao');
           setWrongLetters([...wrongLetters, e.target.value.toLowerCase()]);
         }
         setSelectedLetters([
@@ -120,7 +119,6 @@ function App() {
     setResult('');
   };
 
-  console.log(word);
   return (
     <Flex flexDir="column" h="100vh" p={3} textAlign="center" fontSize="xl">
       <Flex justifyContent="space-between" p="4">
